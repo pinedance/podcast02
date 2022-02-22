@@ -1,0 +1,23 @@
+<nav>
+  <h1>Hi.</h1>
+  <a href="{{site.baseurl}}/">
+    {% if site.data.theme.social.gravatar %}
+    <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar"
+      alt="My photo" />
+    {% else %}
+    <img src="{{site.baseurl}}/logo.png" id="logo" alt="Blog logo" />
+    {% endif %}
+  </a>
+  <h2>I'm {{ site.data.theme.name }}.</h2>
+  <div id="bio">
+    <p>Private Space for Learning English</p>
+    <p>Data Source is <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=20059988&memberNo=42881133">Here</a>
+    </p>
+    <p>Including Podcast Feed <a href="{{site.baseurl}}/podcasts.xml">'podcasts'</a></p>
+    <p>You can contact me <a href="https://github.com/pinedance/podcast02/issues">Here</a></p>
+  </div>
+  <div id="social">
+    {% include social.html %}
+  </div>
+
+</nav>
