@@ -7,7 +7,7 @@
 <channel>
  <atom:link href="{{site.url}}{{site.baseurl}}/podcasts.xml" rel="self" type="application/rss+xml"/>
  <atom:link href="{{site.url}}{{site.baseurl}}"/>
- <title>HearHear</title>
+ <title>{{site.title}}</title>
  <link href="{{site.url}}{{site.baseurl}}">{{site.url}}{{site.baseurl}}</link>
  <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
  <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
@@ -15,13 +15,13 @@
  <language>en</language>
  <copyright>All rights reserved</copyright>
  <webMaster>feeds@soundcloud.com (SoundCloud Feeds)</webMaster>
- <description>Podcast by NoBody</description>
- <itunes:subtitle>Podcast by NoBody</itunes:subtitle>
+ <description>Podcast by {{ site.data.theme.name }}</description>
+ <itunes:subtitle>Podcast by {{ site.data.theme.name }}</itunes:subtitle>
  <itunes:owner>
    <itunes:name>{{ site.data.theme.name }}</itunes:name>
    <itunes:email>{{ site.data.theme.email }}</itunes:email>
  </itunes:owner>
- <itunes:author>NoBody</itunes:author>
+ <itunes:author>{{ site.data.theme.name }}</itunes:author>
  <itunes:explicit>no</itunes:explicit>
  <itunes:image href="http://i1.sndcdn.com/avatars-000337673420-qndzm0-original.jpg"/>
  <image>

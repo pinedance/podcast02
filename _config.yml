@@ -5,6 +5,7 @@ lsi: false
 exclude: ["LICENSE", "README.md", ".ruby-version", ".gitignore", "Gemfile", "Gemfile.lock", "_buildPostFromMP3.rb"]
 
 # Site Settings
+title: "Podcast02 YND"
 baseurl:            "/podcast02" # Base URL must end WITHOUT a slash, default: ""
 timezone:           Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
