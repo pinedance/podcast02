@@ -3,8 +3,9 @@ layout: default
 ---
 
 <p class="meta">
-  {{ page.date | date: "%B %d, %Y" }}
-  <a href="/">
+  Private Space for Learning English
+  <!-- {{ page.date | date: "%B %d, %Y" }} -->
+  <a href="{{ site.baseurl }}/">
     <i class="home fa fa-home"></i>
   </a>
 </p>
@@ -29,28 +30,13 @@ layout: default
 <div id="related">
   <h3>Related Posts</h3>
   <ul class="posts">
-    {% for post in site.related_posts limit:3 %}
+    {% for post in site.related_posts limit:5 %}
     <li>
-      <span>{{ post.date | date_to_string }} &raquo;</span> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title
-        }}</a>
+      <span>{{ post.date | date_to_string }} &raquo;</span> 
+      <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
   </ul>
-
-  <h3>Tags :</h3>
-  <span>
-    {% for tag in page.tags %}
-    <a href="{{site.baseurl}}{{ '/tag/' | append:tag }}.html" rel="tag">
-      {{ tag }}
-      {% if forloop.last %}
-      .
-      {% else %}
-      ,
-      {% endif %}
-    </a>
-    {% unless forloop.last %}{% endunless %}{% endfor %}
-  </span>
-</div>
 
 
 <!-- media player plyr -->
