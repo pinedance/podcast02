@@ -1,6 +1,6 @@
 # General Jekyll Config
 highlighter: rouge
-url: https://pinedance.github.io/podcast02
+url: https://pinedance.github.io
 contacturl: "https://github.com/pinedance/podcast02/issues"
 lsi: false
 exclude:
